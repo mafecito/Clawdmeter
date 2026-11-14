@@ -61,7 +61,7 @@ jobs:
         with:
           name: firmware-${{ matrix.env }}
           path: dist/
-          retention-days: 7
+          retention-days: 1
 
   sim:
     name: Simulator screenshot
@@ -86,7 +86,7 @@ jobs:
         with:
           name: sim-autoshot
           path: sim-autoshot.bmp
-          retention-days: 14
+          retention-days: 1
 
   unit-tests:
     name: Firmware unit tests (host)
