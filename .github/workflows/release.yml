@@ -84,6 +84,7 @@ jobs:
           name: firmware-${{ matrix.env }}
           path: dist/
           if-no-files-found: error
+          retention-days: 1
 
   desktop:
     name: Desktop ${{ matrix.name }}
@@ -248,6 +249,7 @@ jobs:
           name: desktop-${{ matrix.name }}
           path: dist/
           if-no-files-found: error
+          retention-days: 1
 
   publish:
     name: Publish GitHub Release
